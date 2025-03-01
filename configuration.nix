@@ -87,6 +87,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
   };
+  programs.zsh.enable = true;
 
   # Install firefox.
   programs.firefox.enable = true;
