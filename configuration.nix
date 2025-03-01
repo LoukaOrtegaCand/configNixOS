@@ -85,9 +85,7 @@
     isNormalUser = true;
     description = "Pomalone";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    #  thunderbird
-    ];
+    shell = pkgs.zsh;
   };
 
   # Install firefox.
@@ -105,6 +103,7 @@
     wget
     git
     kitty
+    tree
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
