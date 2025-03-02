@@ -26,5 +26,8 @@
       # };
       #}
     ];
+    oh-my-zsh = {
+      enable = true;
+    };
   };
 }

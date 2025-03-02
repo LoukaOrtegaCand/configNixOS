@@ -6,6 +6,7 @@
     ./waybar
     ./direnv.nix
     ./kitty.nix
+    ./nvim
   ];
   home = {
     stateVersion = "24.11";
@@ -17,6 +18,7 @@
       zsh
       hyprland-protocols
       kitty
+      jetbrains.clion
     ];
   };
   programs = {
@@ -41,5 +43,7 @@
       };
       themeFile = "Catppuccin-Mocha";
     };
+    neovim.enable = true;
+    google-chrome.enable = true;
   };
 }
