@@ -81,13 +81,13 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
   users.users.pomalone = {
     isNormalUser = true;
     description = "Pomalone";
     extraGroups = [ "networkmanager" "wheel" ];
-    shell = pkgs.zsh;
   };
-  programs.zsh.enable = true;
 
   # Install firefox.
   programs.firefox.enable = true;
