@@ -6,7 +6,7 @@
     ./waybar
     ./direnv.nix
     ./kitty.nix
-    ./nvim
+    ./vim
   ];
   home = {
     stateVersion = "24.11";
@@ -19,6 +19,9 @@
       hyprland-protocols
       kitty
       jetbrains.clion
+      cmake
+      gnumake
+      gcc
     ];
   };
   programs = {
