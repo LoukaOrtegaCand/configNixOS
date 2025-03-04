@@ -6,7 +6,6 @@
     ./waybar
     ./direnv.nix
     ./kitty.nix
-    ./vim
   ];
   home = {
     stateVersion = "24.11";
@@ -22,6 +21,7 @@
       cmake
       gnumake
       gcc
+      zoxide
     ];
   };
   programs = {
@@ -48,5 +48,13 @@
     };
     neovim.enable = true;
     google-chrome.enable = true;
+    zoxide = {
+      enable = true;
+      enableBashIntegration = true;
+      enableZshIntegration = true;
+      options = [
+        "--cmd cd"
+      ];
+    };
   };
 }
