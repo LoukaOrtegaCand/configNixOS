@@ -24,6 +24,7 @@
       gcc
       zoxide
       clang-tools
+      neofetch
     ];
   };
   programs = {
