@@ -6,7 +6,6 @@
 
         call plug#begin()
 
-        Plug 'wakatime/vim-wakatime'
         Plug 'drawbu/vim-epitech'
 
         call plug#end()

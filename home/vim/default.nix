@@ -6,7 +6,6 @@
   };
 
   programs.neovim = {
-    package = pkgs.unstable.neovim-unwrapped;
     enable = true;
     defaultEditor = true;
     vimAlias = true;
@@ -15,7 +14,6 @@
     extraConfig =
       builtins.readFile ./.vimrc
       + /*lua*/ ''
-        lua require('dark-switch')
         lua require('settings')
         lua require('lazy').setup('plugins')
       '';
@@ -26,6 +24,7 @@
 
     plugins = with pkgs.vimPlugins; [
       lazy-nvim
+      nvim-treesitter
       nvim-treesitter.withAllGrammars
     ];
 

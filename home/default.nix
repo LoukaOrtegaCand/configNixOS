@@ -6,6 +6,7 @@
     ./waybar
     ./direnv.nix
     ./kitty.nix
+    ./vim
   ];
   home = {
     stateVersion = "24.11";
@@ -22,6 +23,7 @@
       gnumake
       gcc
       zoxide
+      clang-tools
     ];
   };
   programs = {

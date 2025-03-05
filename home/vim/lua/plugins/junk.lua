@@ -1,7 +1,4 @@
 return {
-  -- Wakatime integration
-  'wakatime/vim-wakatime',
-
   -- Tree of all the changes
   {
     'mbbill/undotree',
