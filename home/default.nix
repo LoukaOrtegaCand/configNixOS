@@ -29,6 +29,7 @@
       curl
       # lsp
       lua-language-server
+      vesktop
     ];
   };
   programs = {
