@@ -24,8 +24,9 @@
       gnumake
       gcc
       zoxide
-      clang-tools
       neofetch
+      docker
+      curl
       # lsp
       lua-language-server
     ];

@@ -104,7 +104,7 @@
         # language servers
         lua-language-server
         clang-analyzer
-        clang-tools
+        clang-tools_19
         pyright
         vscode-langservers-extracted
         nodePackages.typescript-language-server
