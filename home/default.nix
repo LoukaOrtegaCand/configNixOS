@@ -7,6 +7,7 @@
     ./direnv.nix
     ./kitty.nix
     ./vim
+    ./dev
   ];
   home = {
     stateVersion = "24.11";
@@ -25,6 +26,8 @@
       zoxide
       clang-tools
       neofetch
+      # lsp
+      lua-language-server
     ];
   };
   programs = {
