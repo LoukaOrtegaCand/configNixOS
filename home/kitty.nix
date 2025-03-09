@@ -13,7 +13,7 @@
     settings = {
       # Window settings
       hide_window_decorations = "no";
-      background_opacity = "0.70";
+      background_opacity = "1.0";
       dynamic_background_opacity = "yes";
       window_padding_width = "0.0";
       remember_window_size = "no";
