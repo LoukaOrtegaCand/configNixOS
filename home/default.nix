@@ -30,6 +30,7 @@
       # lsp
       lua-language-server
       vesktop
+      teams-for-linux
     ];
   };
   programs = {

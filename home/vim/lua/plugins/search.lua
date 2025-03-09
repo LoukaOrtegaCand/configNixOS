@@ -13,4 +13,5 @@ return {
             "MunifTanjim/nui.nvim",
         }
     },
+    vim.api.nvim_set_keymap('n', '<S-t>', ':Neotree<CR>', { noremap = true, silent = true }),
 }
