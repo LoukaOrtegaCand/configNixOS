@@ -31,6 +31,7 @@
       vesktop
       teams-for-linux
       inetutils
+      ghc
     ];
   };
   programs = {
