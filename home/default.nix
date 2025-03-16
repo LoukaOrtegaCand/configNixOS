@@ -4,10 +4,10 @@
     ./shell
     ./hyprland
     ./waybar
-    ./direnv.nix
-    ./kitty.nix
     ./vim
     ./dev
+    ./direnv.nix
+    ./kitty.nix
   ];
   home = {
     stateVersion = "24.11";
@@ -26,12 +26,14 @@
       neofetch
       docker
       curl
-      # lsp
       lua-language-server
       vesktop
       teams-for-linux
       inetutils
       ghc
+      stack
+      virt-manager
+      croc
     ];
   };
   programs = {
