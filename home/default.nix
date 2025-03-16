@@ -30,7 +30,7 @@
       vesktop
       teams-for-linux
       inetutils
-      ghc
+      haskell.compiler.ghc983
       stack
       virt-manager
       croc
