@@ -118,6 +118,9 @@
     git
     kitty
     tree
+    ihaskell
+    haskellPackages.stack
+    haskellPackages.ghc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
