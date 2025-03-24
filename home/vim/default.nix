@@ -28,6 +28,9 @@
       nvim-treesitter.withAllGrammars
     ];
 
-    extraPackages = with pkgs; [tree-sitter];
+    extraPackages = with pkgs; [
+      tree-sitter
+      haskell-language-server
+    ];
   };
 }

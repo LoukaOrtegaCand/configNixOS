@@ -32,6 +32,8 @@
       inetutils
       virt-manager
       croc
+      stack
+      ghc
     ];
   };
   programs = {

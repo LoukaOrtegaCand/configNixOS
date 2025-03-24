@@ -123,7 +123,6 @@
         htmx-lsp
         terraform-ls
         yaml-language-server
-        haskell-language-server
         ijhttp
       ];
   };
