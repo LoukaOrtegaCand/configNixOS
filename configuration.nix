@@ -89,13 +89,9 @@
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
-  # Install firefox.
   programs.firefox.enable = true;
 
   programs.hyprland.enable = true;
-
-
-
 
   programs.virt-manager.enable = true;
 
@@ -119,6 +115,18 @@
     kitty
     tree
   ];
+
+  hardware = {
+    graphics = {
+      enable = true;
+      # driSupport = true;
+      # driSupport32Bit = true;
+    };
+    # nvidia = {
+    #   nvidiaSettings = true;
+    #   open = false;
+    # };
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
