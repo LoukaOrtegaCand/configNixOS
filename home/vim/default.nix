@@ -31,6 +31,7 @@
     extraPackages = with pkgs; [
       tree-sitter
       haskell-language-server
+      rust-analyzer
     ];
   };
 }

@@ -34,6 +34,8 @@
       croc
       stack
       ghc
+      qbittorrent
+      gobuster
     ];
   };
   programs = {
