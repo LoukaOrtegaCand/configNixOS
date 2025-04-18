@@ -36,6 +36,8 @@
       ghc
       qbittorrent
       gobuster
+      jetbrains.rust-rover
+      pdfrip
     ];
   };
   programs = {

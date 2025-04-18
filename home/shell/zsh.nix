@@ -3,6 +3,7 @@
   programs.zsh = {
     enable = true;
     sessionVariables = {
+      GITHUB_TOKEN = "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";
       FLAKE = "/home/pomalone/config";
     };
     initExtra = ''

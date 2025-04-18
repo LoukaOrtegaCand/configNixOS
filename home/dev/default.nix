@@ -48,6 +48,7 @@
       PNPM_HOME = "${config.home.homeDirectory}/.pnpm";
       NODE_OPTIONS = "--max-old-space-size=8192";
       ANDROID_HOME = "${config.home.homeDirectory}/.local/share/Android/Sdk";
+      GITHUB_TOKEN = "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";
     };
 
     packages =
