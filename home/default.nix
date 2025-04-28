@@ -38,6 +38,7 @@
       gobuster
       jetbrains.rust-rover
       pdfrip
+      openvpn
     ];
   };
   programs = {
