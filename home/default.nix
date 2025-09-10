@@ -39,6 +39,9 @@
       jetbrains.rust-rover
       pdfrip
       openvpn
+      nmap
+      hashcat
+      unityhub
     ];
   };
   programs = {

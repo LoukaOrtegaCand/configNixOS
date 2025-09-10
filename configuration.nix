@@ -76,6 +76,10 @@
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
+    services.udev.extraRules = ''
+    # allow all users to open any DepthAI/OAK-D device
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="03e7", MODE="0666"
+  '';
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
@@ -86,7 +90,7 @@
   users.users.pomalone = {
     isNormalUser = true;
     description = "Pomalone";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
   };
 
   programs.firefox.enable = true;
@@ -99,9 +103,14 @@
 
   virtualisation.libvirtd.enable = true;
 
+  virtualisation.docker.enable = true;
+
   virtualisation.spiceUSBRedirection.enable = true;
 
-
+networking.extraHosts =
+  ''
+    10.10.96.213 mustacchio.thm
+  '';
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
